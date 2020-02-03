@@ -1,0 +1,28 @@
+
+/* iminリンク */
+.imin-link {
+  text-decoration: none;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+	padding: 0.1em 0.3em 0 0.3em;
+	display: inline-block;
+	transition: .3s;
+	color: #000;
+}
+
+.imin-link::after {
+  position: absolute;
+	bottom: 0;
+	left: 50%;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: #000;
+	transition: .3s;
+	transform: translateX(-50%);
+}
+
+.imin-link:hover::after {
+  width: 90%;
+}
